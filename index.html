@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Restaurant</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://lh3.googleusercontent.com/p/AF1QipMfD7nfXnoSdRFfo7Ol61TQiBIgY_93euEk0v8h=s1360-w1360-h1020-rw') no-repeat center/cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Menu */
+.menu-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+}
+
+/* Button */
+button {
+    background: orange;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div>🍴 GAGAN MAGAN RESTAURANT</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero" id="Home">
+    Delicious Food, Happy Mood 😋
+</div>
+
+<!-- Menu Section -->
+<section id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-item">
+        <h3>SAMOSHA</h3>
+        <p>₹15</p>
+        <button onclick="order('SAMOSHA')">Order</button>
+    </div>
+
+    <div class="menu-item">
+        <h3>KACHORI</h3>
+        <p>₹20</p>
+        <button onclick="order('KACHORI')">Order</button>
+    </div>
+
+    <div class="menu-item">
+        <h3>POHA</h3>
+        <p>₹15</p>
+        <button onclick="order('POHA')">Order</button>
+    </div>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 1234567890  </p>
+    <p>📍 Itarsi, India</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 GAGAN MAGAN RESTAURANT</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+function order(item) {
+    alert("You ordered " + item + " 🍽️");
+}
+</script>
+
+</body>
+</html>
